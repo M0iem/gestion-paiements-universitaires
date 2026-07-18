@@ -4,7 +4,7 @@ let total = 25000;
 let tranches = [
     { montant: 8500, paye: true },
     { montant: 8500, paye: true },
-    { montant: 8000, paye: false }
+    { montant: 8000, paye: true }
 ];
 
 // ====== CALCUL ======
@@ -35,3 +35,10 @@ function telecharger(file){
     link.click();
 }
 
+if (reste === 0) {
+    document.getElementById("successMessage").innerHTML =
+        "🎉 Félicitations ! Tous les paiements universitaires ont été effectués.";
+    document.getElementById("successMessage").style.color = "#16a34a";
+    document.getElementById("successMessage").style.fontWeight = "bold";
+    document.getElementById("successMessage").style.marginTop = "15px";
+}

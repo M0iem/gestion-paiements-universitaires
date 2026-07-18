@@ -166,3 +166,20 @@ button i {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     margin-top: 20px;
 }
+.table-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.table-title h3 {
+    margin: 0;
+}
+
+.table-icon {
+    width: 20px;
+    height: 20px;
+    color: #2563eb;
+    flex-shrink: 0;
+}
